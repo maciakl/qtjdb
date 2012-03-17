@@ -1,0 +1,14 @@
+#!/bin/bash
+
+mkdir QTJDB
+mkdir QTJDB/SERVER
+mkdir QTJDB/CLIENT
+
+javac QTJDBServer.java
+mv *.class QTJDB/SERVER/
+
+javac QTJDBClient.java
+mv *.class QTJDB/CLIENT/
+
+cp data.template QTJDB/SERVER/qtjdb.dat
+cp config.template QTJDB/SERVER/.qtjdb 

@@ -1,0 +1,36 @@
+QTJDB - Quick and Tiny Java Database
+(c) 2004 Lukasz Grzegorz Maciak
+
+
+System Requirements:
+
+	Java 1.4 VM
+	Bash Shell (to run the compilation shell scripts)
+
+Automatic Compilation:
+
+	To compile and setup QTJDB run setup script includent in the package. The script will produce a new directory named QTJDB and copy
+	all the needed files there.
+	
+Manual Setup:
+
+	If you can't run the bash script compile java manually using javac or equivalent. Rename data.template to qtjdb.dat and config.template
+	to .qtjdb. You can edit the .qtjdb file to change the name of the input file, and change other properties.
+	
+Running QTJDB Server:
+
+	java QTJDBServer
+
+Running QTJDB Client:
+
+	java QTJDBClient [host] [port]
+	
+	The client app takes two parameters - first one is the name or IP addres of the host machine, the second one is the port
+	on which the client should connect to the host.
+	
+	The default port on which the server is listening is 1337 but this can be changed by editing the .qtjdb file.
+	
+Javadoc Documentation:
+
+	Some javadoc documentation exists, but it is vastly incomplete. You can generate the javadoc pages using the standard javadoc command syntax.
+	
